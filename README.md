@@ -105,6 +105,10 @@ The Telegram Bot API server source code is licensed under the terms of the **Boo
 
 For questions about implementing this local server, integration with the metadata bot, or additional support, reach out to me on Telegram: **[@ordnavile](https://t.me/ordnavile)**
 
+---
+
+*This project is a fork of the original repository. You can find the original source code here: [https://github.com/tdlib/telegram-bot-api](https://github.com/tdlib/telegram-bot-api)*
+
 
 ---
 ---
@@ -214,3 +218,7 @@ O código-fonte original do servidor da Telegram Bot API é licenciado sob os te
 ## <a id="contato--suporte-1"></a>📞 Contato / Suporte
 
 Para dúvidas sobre a implementação deste servidor local, integração com o bot de metadados ou suporte adicional, entre em contato comigo pelo Telegram: **[@ordnavile](https://t.me/ordnavile)**
+
+---
+
+*Este projeto é um fork do projeto original. O link do repositório de onde foi feito o fork está aqui: [https://github.com/tdlib/telegram-bot-api](https://github.com/tdlib/telegram-bot-api)*
