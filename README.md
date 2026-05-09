@@ -17,7 +17,7 @@ This environment was built and successfully validated during the development of 
 
 ---
 
-## 🎯 About the Project
+## <a id="about-the-project"></a>🎯 About the Project
 
 The Telegram Bot API provides an HTTP interface to create bots on Telegram. However, using the public API (`api.telegram.org`) comes with strict size limits for uploads and downloads.
 
@@ -32,7 +32,7 @@ This local server was explicitly created to support the needs of a bot focused o
 
 ---
 
-## 🔒 Security and Environment Variables
+## <a id="security-and-environment-variables"></a>🔒 Security and Environment Variables
 
 To guarantee server security and prevent exposing sensitive credentials, the project uses **Environment Variables**. It is crucial that you never hardcode your keys directly into the source code.
 
@@ -46,7 +46,7 @@ Required variables that must be set in your environment (`.env` or in `docker-co
 
 ---
 
-## 🖥️ Test Report and Performance
+## <a id="test-report-and-performance"></a>🖥️ Test Report and Performance
 
 To prove the efficiency of compiling via Docker and the viability of the project on older hardware, the environment was rigorously tested on the following setup:
 
@@ -63,7 +63,7 @@ Despite the lengthy compilation time, the creation of the test environment **was
 
 ---
 
-## 🐳 Installation via Docker
+## <a id="installation-via-docker"></a>🐳 Installation via Docker
 
 To ease configuration, standardize the environment, and avoid installing complex dependencies (like OpenSSL, zlib, C++17 compatible compilers, and gperf) directly on the host machine, this project has been fully dockerized.
 
@@ -85,7 +85,7 @@ To ease configuration, standardize the environment, and avoid installing complex
 
 ---
 
-## 🔄 Moving a Bot to a Local Server
+## <a id="moving-a-bot-to-a-local-server"></a>🔄 Moving a Bot to a Local Server
 
 To ensure your bot sends large files locally and doesn't conflict with public cloud servers:
 
@@ -95,13 +95,13 @@ To ensure your bot sends large files locally and doesn't conflict with public cl
 
 ---
 
-## 📄 License
+## <a id="license"></a>📄 License
 
 The Telegram Bot API server source code is licensed under the terms of the **Boost Software License**. See the official `tdlib/telegram-bot-api` repository for more licensing information.
 
 ---
 
-## 📞 Contact / Support
+## <a id="contact--support"></a>📞 Contact / Support
 
 For questions about implementing this local server, integration with the metadata bot, or additional support, reach out to me on Telegram: **[@ordnavile](https://t.me/ordnavile)**
 
@@ -110,7 +110,7 @@ For questions about implementing this local server, integration with the metadat
 ---
 
 
-# Telegram Bot API (Servidor Local) - Suporte a Grandes Arquivos (PT-BR)
+# <a id="telegram-bot-api-servidor-local---suporte-a-grandes-arquivos-pt-br"></a>Telegram Bot API (Servidor Local) - Suporte a Grandes Arquivos (PT-BR)
 
 Este repositório contém as instruções e configurações para compilar e executar o **Telegram Bot API** em um servidor local utilizando Docker. O objetivo principal deste projeto é hospedar a API do Telegram localmente para remover as limitações padrão de tamanho de arquivo, permitindo o envio de arquivos de até 1 GB (o limite oficial para bots na API pública é 50 MB) e download sem limite de tamanho.
 
@@ -127,7 +127,7 @@ Este ambiente foi construído e validado com sucesso durante o desenvolvimento d
 
 ---
 
-## 🎯 Sobre o Projeto
+## <a id="sobre-o-projeto-1"></a>🎯 Sobre o Projeto
 
 O Telegram Bot API fornece uma interface HTTP para criar bots no Telegram. No entanto, usar a API pública (`api.telegram.org`) traz limitações rigorosas de tamanho para upload e download. 
 
@@ -142,7 +142,7 @@ Este servidor local foi criado especificamente para suportar as demandas de um b
 
 ---
 
-## 🔒 Segurança e Variáveis de Ambiente
+## <a id="segurança-e-variáveis-de-ambiente-1"></a>🔒 Segurança e Variáveis de Ambiente
 
 Para garantir a segurança do servidor e evitar exposição de credenciais sensíveis, o projeto utiliza **Variáveis de Ambiente**. É crucial que você não coloque suas chaves diretamente no código-fonte.
 
@@ -156,7 +156,7 @@ Variáveis obrigatórias que devem ser definidas no seu ambiente (`.env` ou no `
 
 ---
 
-## 🖥️ Relato de Teste e Performance
+## <a id="relato-de-teste-e-performance-1"></a>🖥️ Relato de Teste e Performance
 
 Para provar a eficiência da compilação via Docker e a viabilidade do projeto em hardwares mais antigos, o ambiente foi rigorosamente testado nas seguintes configurações:
 
@@ -173,7 +173,7 @@ Apesar do longo tempo de compilação, a criação do ambiente de teste **foi co
 
 ---
 
-## 🐳 Instalação via Docker
+## <a id="instalação-via-docker-1"></a>🐳 Instalação via Docker
 
 Para facilitar a configuração, padronizar o ambiente e evitar a necessidade de instalar dependências complexas (como OpenSSL, zlib, compiladores C++17 e gperf) diretamente na máquina, este projeto foi inteiramente dockerizado.
 
@@ -195,7 +195,7 @@ Para facilitar a configuração, padronizar o ambiente e evitar a necessidade de
 
 ---
 
-## 🔄 Como Mover seu Bot para o Servidor Local
+## <a id="como-mover-seu-bot-para-o-servidor-local-1"></a>🔄 Como Mover seu Bot para o Servidor Local
 
 Para garantir que o seu bot envie arquivos pesados localmente e não sofra conflitos com os servidores públicos na nuvem:
 
@@ -205,12 +205,12 @@ Para garantir que o seu bot envie arquivos pesados localmente e não sofra confl
 
 ---
 
-## 📄 Licença
+## <a id="licença-1"></a>📄 Licença
 
 O código-fonte original do servidor da Telegram Bot API é licenciado sob os termos da **Boost Software License**. Veja o repositório oficial da `tdlib/telegram-bot-api` para mais informações de licenciamento.
 
 ---
 
-## 📞 Contato / Suporte
+## <a id="contato--suporte-1"></a>📞 Contato / Suporte
 
 Para dúvidas sobre a implementação deste servidor local, integração com o bot de metadados ou suporte adicional, entre em contato comigo pelo Telegram: **[@ordnavile](https://t.me/ordnavile)**
