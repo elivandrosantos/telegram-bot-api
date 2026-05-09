@@ -1,0 +1,14 @@
+services:
+  telegram-api:
+    build: .
+    image: meu-telegram-api:latest
+    container_name: telegram-api
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./data:/data
+    environment:
+      - TELEGRAM_API_ID=${TELEGRAM_API_ID}
+      - TELEGRAM_API_HASH=${TELEGRAM_API_HASH}
+    command: ["--local", "--dir=/data"]
+    restart: always
