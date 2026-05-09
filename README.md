@@ -97,7 +97,7 @@ To ensure your bot sends large files locally and doesn't conflict with public cl
 
 ## <a id="license"></a>📄 License
 
-The Telegram Bot API server source code is licensed under the terms of the **Boost Software License**. See the official `tdlib/telegram-bot-api` repository for more licensing information.
+Telegram Bot API server source code is licensed under the terms of the Boost Software License. See [LICENSE_1_0.txt](https://www.boost.org/LICENSE_1_0.txt) for more information.
 
 ---
 
@@ -211,7 +211,7 @@ Para garantir que o seu bot envie arquivos pesados localmente e não sofra confl
 
 ## <a id="licença-1"></a>📄 Licença
 
-O código-fonte original do servidor da Telegram Bot API é licenciado sob os termos da **Boost Software License**. Veja o repositório oficial da `tdlib/telegram-bot-api` para mais informações de licenciamento.
+O código-fonte do servidor Telegram Bot API é licenciado sob os termos da Boost Software License. Veja [LICENSE_1_0.txt](https://www.boost.org/LICENSE_1_0.txt) para mais informações.
 
 ---
 
