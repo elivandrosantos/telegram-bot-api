@@ -6,6 +6,9 @@ This repository contains the instructions and configurations to compile and run 
 
 This environment was built and successfully validated during the development of a bot specialized in sending files and **cleaning metadata**, ensuring high performance and privacy when handling large volumes of data.
 
+> [!TIP]
+> **Live Demo:** You can test the active metadata cleaning bot live on Telegram at **[@CleanByteX_bot](https://t.me/CleanByteX_bot)**!
+
 ## 📋 Table of Contents
 1. [About the Project](#about-the-project)
 2. [Security and Environment Variables](#security-and-environment-variables)
@@ -138,6 +141,9 @@ For questions about implementing this local server, integration with the metadat
 Este repositório contém as instruções e configurações para compilar e executar o **Telegram Bot API** em um servidor local utilizando Docker. O objetivo principal deste projeto é hospedar a API do Telegram localmente para remover as limitações padrão de tamanho de arquivo, permitindo o envio de arquivos de até 1 GB (o limite oficial para bots na API pública é 50 MB) e download sem limite de tamanho.
 
 Este ambiente foi construído e validado com sucesso durante o desenvolvimento de um bot especializado no envio de arquivos e **limpeza de metadados**, garantindo alta performance e privacidade na manipulação de grandes volumes de dados.
+
+> [!TIP]
+> **Bot Ativo para Testes:** Para testar o bot na prática, ele está ativo e disponível no Telegram em **[@CleanByteX_bot](https://t.me/CleanByteX_bot)**!
 
 ## 📋 Sumário
 1. [Sobre o Projeto](#sobre-o-projeto-1)
