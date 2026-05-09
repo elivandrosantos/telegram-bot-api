@@ -1,0 +1,22 @@
+# Git
+.git
+.gitignore
+
+# Configurações do Docker e Variáveis de Ambiente
+.env
+.dockerignore
+docker-compose.yml
+docker-compose.*.yml
+
+# Documentação
+README.md
+*.md
+
+# Pastas de build / cache
+build/
+bin/
+.cache/
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
