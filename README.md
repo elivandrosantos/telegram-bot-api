@@ -36,9 +36,28 @@ This local server was explicitly created to support the needs of a bot focused o
 
 To guarantee server security and prevent exposing sensitive credentials, the project uses **Environment Variables**. It is crucial that you never hardcode your keys directly into the source code.
 
-Required variables that must be set in your environment (`.env` or in `docker-compose`):
-- `TELEGRAM_API_ID`: Your application ID (obtained at *my.telegram.org*).
-- `TELEGRAM_API_HASH`: Your application Hash.
+There are two main ways to pass these variables to your server:
+
+**Option 1: Using a `.env` file (Recommended for Docker)**
+Create a file named `.env` in the root of your project and add the variables inside:
+```env
+TELEGRAM_API_ID=your_id_here
+TELEGRAM_API_HASH=your_hash_here
+TELEGRAM_LOCAL=true
+```
+
+**Option 2: Exporting via Terminal**
+If you are running the server manually or outside of a pre-configured Docker Compose environment, you can export the variables directly in your terminal before running the server:
+```bash
+export TELEGRAM_API_ID=your_id_here
+export TELEGRAM_API_HASH=your_hash_here
+```
+
+### Explaining the Configurations:
+- `TELEGRAM_API_ID`: **(Mandatory)** Your application ID. You must obtain your own `api_id` by logging into *my.telegram.org*.
+- `TELEGRAM_API_HASH`: **(Mandatory)** Your application Hash, also obtained from *my.telegram.org*. This acts as a password to validate your `api_id`.
+- `TELEGRAM_LOCAL`: Enables local mode (`--local` flag), which unlocks the ability to send files up to 2GB, download without limits, and use local file paths.
+- `TELEGRAM_HTTP_PORT`: The default port is `8081`. You can configure a different port if needed.
 
 **Implemented Security Practices:**
 - The compilation and execution are completely isolated in a **Docker Container**. This prevents conflicting dependencies from affecting the host OS and isolates bot access.
@@ -150,9 +169,28 @@ Este servidor local foi criado especificamente para suportar as demandas de um b
 
 Para garantir a segurança do servidor e evitar exposição de credenciais sensíveis, o projeto utiliza **Variáveis de Ambiente**. É crucial que você não coloque suas chaves diretamente no código-fonte.
 
-Variáveis obrigatórias que devem ser definidas no seu ambiente (`.env` ou no `docker-compose`):
-- `TELEGRAM_API_ID`: O ID do seu aplicativo (obtido em *my.telegram.org*).
-- `TELEGRAM_API_HASH`: O Hash do seu aplicativo.
+Existem duas formas principais de configurar essas variáveis para o seu servidor:
+
+**Opção 1: Usando um arquivo `.env` (Recomendado para Docker)**
+Crie um arquivo chamado `.env` na raiz do seu projeto e insira as configurações dentro dele:
+```env
+TELEGRAM_API_ID=seu_id_aqui
+TELEGRAM_API_HASH=seu_hash_aqui
+TELEGRAM_LOCAL=true
+```
+
+**Opção 2: Exportando via Terminal**
+Caso você vá rodar o servidor manualmente na máquina ou fora do escopo padrão do Docker Compose, a documentação original orienta a exportar as variáveis diretamente pelo terminal antes de iniciar:
+```bash
+export TELEGRAM_API_ID=seu_id_aqui
+export TELEGRAM_API_HASH=seu_hash_aqui
+```
+
+### Explicação das Configurações:
+- `TELEGRAM_API_ID`: **(Obrigatório)** É a identificação do seu aplicativo. Você precisa gerar e obter o seu em *my.telegram.org*.
+- `TELEGRAM_API_HASH`: **(Obrigatório)** O Hash atua como a senha que valida o seu `api_id`, também obtido no *my.telegram.org*.
+- `TELEGRAM_LOCAL`: Habilita o modo local (flag `--local`). É **fundamental** para destravar o limite de envio de 2GB (focado aqui em 1GB), liberar downloads sem limites e permitir o envio de mídias referenciando os caminhos locais do disco.
+- `TELEGRAM_HTTP_PORT`: Por padrão, o servidor roda na porta `8081`. Você pode alterar essa variável se precisar expor o servidor em porta externa.
 
 **Práticas de Segurança Implementadas:**
 - A compilação e execução são totalmente isoladas em um **Container Docker**. Isso impede que dependências conflitantes afetem o sistema operacional hospedeiro e isola o acesso do bot.
